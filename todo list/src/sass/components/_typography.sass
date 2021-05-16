@@ -1,0 +1,51 @@
+//  In this folder, I write all the rules related to the typography of the element, i.e, the font colors, sizes, decorations,
+//  weights etc. No layout related stuff i.e. margins, paddings, container type etc. will be here.
+
+@use '../utilities/_mixins' as *
+@use '../utilities/_variables' as *
+
+.app-name
+    font-size: 1.5rem
+    font-weight: $font-weight-heavy
+    color: white
+
+.add-new-task-input
+    @include text-very-dark
+
+    &::placeholder
+        @include text-dark
+
+.task-list-item
+    @include text-very-dark
+
+.task-list-item-strikethrough
+    @include text-very-light
+    text-decoration: line-through
+    text-decoration-color: $dark-grayish-blue
+
+.task-list-status
+    @include text-dark
+
+    @media screen and ( min-width: 900px)
+        font-size: 12px
+
+.task-list-filter-option
+    @include text-dark
+    font-weight: $font-weight-heavy
+    font-size: (5rem)/6
+
+    @media screen and ( min-width: 900px)
+        font-size: 15px
+
+.task-list-filter-current
+    @include text-dark
+    font-weight: $font-weight-heavy
+    color: $color-primary
+    font-size: (5rem)/6
+
+    @media screen and ( min-width: 900px)
+        font-size: 15px
+
+.info-drag-and-drop
+    @include text-dark
+    font-weight: $font-weight-heavy

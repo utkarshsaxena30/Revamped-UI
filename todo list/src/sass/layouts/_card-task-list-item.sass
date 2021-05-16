@@ -1,0 +1,29 @@
+@use '../utilities/_variables' as *
+
+.card-task-list-item
+    display: flex
+    align-items: center
+    column-gap: (1rem)/2
+
+    min-height: 3rem
+    padding: 0 1rem
+    border-bottom: 2px solid $light-gray
+
+    background-color: white
+
+    .checkbox-circular-gradient
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .icon-check
+            padding: 0.5px 0 0 0.5px //SHAME
+
+    .task-list-item,
+    .task-list-item-strikethrough
+        width: 100%
+        overflow-wrap: anywhere
+        padding-top: (1rem)/6
+
+    @media screen and ( min-width: 1300px)
+        min-height: 2.5rem

@@ -1,0 +1,38 @@
+@use '../utilities/variables' as *
+
+.dark-theme-body
+    background-color: $d-very-dark-blue
+    background-image: url("/images/bg-mobile-dark.jpg")
+
+    @media screen and ( min-width: 650px)
+        background-image: url("/images/bg-desktop-dark.jpg")
+
+.dark-theme-card-add-new-task, .dark-theme-card-task-list-item, .dark-theme-card-task-list-status, .dark-theme-card-task-list-filter
+    background-color: $d-very-dark-desaturated-blue
+
+.dark-theme-card-task-list-item
+    border-bottom: 2px solid $d-light-grayish-blue
+
+.dark-theme-add-new-task-input
+    color: $d-very-dark-grayish-blue
+    background-color: $d-very-dark-desaturated-blue
+
+    &::placeholder
+        color: $d-dark-grayish-blue
+
+.dark-theme-task-list-item
+    color: $d-very-dark-grayish-blue
+    // color: green
+
+.dark-theme-task-list-item-strikethrough
+    color: $d-light-grayish-blue
+    // color: blue
+
+.dark-theme-task-list-status
+    color: $d-dark-grayish-blue
+
+.dark-theme-task-list-filter-option
+    color: $d-dark-grayish-blue
+
+.dark-theme-info-drag-and-drop
+    color: $d-dark-grayish-blue

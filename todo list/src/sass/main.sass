@@ -1,0 +1,26 @@
+@use './globals/_root' 
+
+@use './layouts/_grid'
+
+@use './layouts/_card-logo'
+
+@use './layouts/_card-add-new-task'
+
+@use './layouts/_container-task-list'
+@use './layouts/_card-task-list-item'
+@use './layouts/_card-task-list-status'
+
+@use './layouts/_card-task-list-filter'
+
+@use './layouts/_info-drag-and-drop'
+
+@use './components/_media'
+@use './components/_typography'
+@use './components/_dark-theme'
+
+// Train of thought: 
+//     Am I concerned about the layout? Go to the relevant layout in layouts folder
+//     If I am concerned about a particular media item, go to components/media
+//     If I am concerned about a text item:
+//         If I am concerned about its style, go to components/typography
+//         If I am concerned about its margin/padding etc. go to the same class under its layout

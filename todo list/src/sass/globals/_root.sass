@@ -1,0 +1,43 @@
+@use '../utilities/variables' as *
+
+html
+    font-family: $font
+    font-size: $font-size
+    font-weight: $font-weight-light
+
+    @media screen and ( min-width: 900)
+        font-size: 22px
+
+    @media screen and ( min-width: 1200px)
+        font-size: 24px
+
+body
+    margin: 0
+    padding: 0
+    background-color: $light-gray
+    background-image: url("/images/bg-mobile-light.jpg")
+    background-size: contain
+    background-repeat: no-repeat
+    background-attachment: fixed
+
+    @media screen and ( min-width: 400px)
+        background-size: auto
+        background-image: url("/images/bg-desktop-light.jpg")
+
+    @media screen and ( min-width: 1450px)
+        background-size: contain
+
+input
+    padding: 0
+    border: none
+    font-family: $font
+    font-size: $font-size
+    font-weight: $font-weight-light
+
+    &::placeholder
+        font-family: $font
+        font-size: $font-size
+        font-weight: $font-weight-light
+
+    &:focus
+        outline: none

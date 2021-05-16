@@ -1,0 +1,15 @@
+@use '../utilities/_mixins' as *
+
+.container-task-list
+
+    border-radius: (1rem)/3 (1rem)/3 0 0
+
+    max-height: 21.5rem //Almost 7 cards, including task list status
+    overflow-y: auto
+
+    margin-top: 16px //SHAME
+
+    @include custom-scrollbar
+
+    @media screen and ( min-width: 1300px)
+        margin-top: 28px

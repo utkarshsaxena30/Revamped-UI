@@ -1,0 +1,27 @@
+//  In this folder, I write all the rules related to the concerned media item. That includes the height, width, border styles,
+//  backgrounds etc. i.e., anything relating at all to THAT particular media item. 
+
+@use '../utilities/_variables' as *
+@use '../utilities/_mixins' as *
+
+.icon-cross
+    height: (2rem)/3
+    width: (2rem)/3
+
+.icon-theme
+    height: 1rem
+    width: 1rem
+
+.icon-check
+    width: 50%
+
+.checkbox-circular-unchecked
+    @include circular
+    border: 2px solid $very-light-grayish-blue
+
+.checkbox-circular-gradient
+    @include circular
+    height: 1rem
+    width: 1rem
+
+    background: $background
