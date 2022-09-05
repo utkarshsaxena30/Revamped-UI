@@ -1,6 +1,6 @@
 # 💄Revamped-UI
 
-Revamped UI is my attemp to create UI focused apps to display my front-end skills, with little to no focus on the backend. I'll develop multiple run of the mill or
+Revamped UI is my attempt to create UI focused apps to display my front-end skills, with little to no focus on the backend. I'll develop multiple run of the mill or
 out of the box projects in this repository. They may or may not be impressive in functionality, but they will be pretty aesthetic.
 
 I use Sass as a preprocessor to my CSS, so if you want to run any of the projects on your local machine, either make changes directly in the compiled CSS (but it will make
